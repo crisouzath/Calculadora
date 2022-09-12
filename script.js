@@ -1,4 +1,3 @@
-let calculadora=document.querySelector(".calculadora");
 let btn=document.getElementsByTagName("span"); //botoes da calculadora
 let tela=document.getElementById("value"); //tela da calculadora
 let n1; //primeiro numero
@@ -30,7 +29,7 @@ for(let i=0; i<btn.length; i++){
            
             
          }else if(this.innerHTML=="."){ //adicionando o decimal
-            if(!tela.innerHTML.includes(".")){ //se a tela estiver vazia
+            if(!tela.innerHTML.includes(".")){ //adicionando decimal apenas se não houver outro
                tela.innerHTML+=".";
             }
          }else if(this.innerHTML=="C"){ //funcao de limpar a tela
